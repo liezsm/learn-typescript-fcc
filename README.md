@@ -54,24 +54,28 @@ const message: string = "Hello, Typescript!";
 console.log(message);
 ```
 
+```typescript
 // Defining a class with properties and methods
 class Person {
-private name: string;
-private age: number;
+  private name: string;
+  private age: number;
 
-constructor(name: string, age: number) {
-this.name = name;
-this.age = age;
-}
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
 
-public greet(): void {
-console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
-}
+  public greet(): void {
+    console.log(
+      `Hello, my name is ${this.name} and I am ${this.age} years old.`
+    );
+  }
 }
 
 // Creating an instance of the Person class and calling its greet method
 const john: Person = new Person("John", 30);
 john.greet();
+```
 
 ## Resources
 
