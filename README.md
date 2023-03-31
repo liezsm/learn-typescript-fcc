@@ -54,6 +54,7 @@ const message: string = "Hello, Typescript!";
 console.log(message);
 ```
 
+<!--
 ```typescript
 // Defining a class with properties and methods
 class Person {
@@ -75,7 +76,7 @@ class Person {
 // Creating an instance of the Person class and calling its greet method
 const john: Person = new Person("John", 30);
 john.greet();
-```
+``` -->
 
 ## Resources
 
