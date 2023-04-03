@@ -40,11 +40,11 @@ Today, I watched the first few videos of the tutorial, which provided an overvie
 
 Today, I continued watching the tutorial and learned about number, boolean in Typescript. We use the documentation to guide along. I have learned that when declaring a simple variable, we dont have to put types because Typescript is smart enough to detect or infer what type it is you inputted. So what I understand is for best practice, it is okay to not use types in cases like this:
 
-I also learned about the any keyword. When using any as type, it will just receive any types of variables may it be string, number, boolean or any. It is not recommened to use any because it just simply means you turned off the typechecking which is the main purpose why we use typescript.
-
 ```typescript
 let isLoggedIn: boolean = false;
 ```
+
+I also learned about the any keyword. When using any as type, it will just receive any types of variables may it be string, number, boolean or any. It is not recommened to use any because it just simply means you turned off the typechecking which is the main purpose why we use typescript.
 
 <!--
 ### Day 3: Modules and Namespaces
