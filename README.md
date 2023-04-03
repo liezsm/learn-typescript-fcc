@@ -32,10 +32,11 @@ npm install -g typescript
 
 I will be documenting my progress in this section, including notes on topics I have learned and challenges I have faced.
 
-<!-- ### Day 1: Introduction to Typescript
+### Day 1: Introduction to Typescript
 
 Today, I watched the first few videos of the tutorial, which provided an overview of Typescript and its benefits over Javascript. I learned about data types, variables, functions, and interfaces in Typescript.
 
+<!--
 ### Day 2: Classes and Access Modifiers
 
 Today, I continued watching the tutorial and learned about classes and access modifiers in Typescript. I learned how to define classes with properties and methods, as well as how to use access modifiers such as `public`, `private`, and `protected` to control access to class members.
