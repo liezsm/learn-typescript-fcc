@@ -46,10 +46,9 @@ let isLoggedIn: boolean = false;
 
 I also learned about the any keyword. When using any as type, it will just receive any types of variables may it be string, number, boolean or any. It is not recommened to use any because it just simply means you turned off the typechecking which is the main purpose why we use typescript.
 
-<!--
-### Day 3: Modules and Namespaces
+### Day 3: Functions
 
-Today, I learned about modules and namespaces in Typescript. I learned how to create and export modules, as well as how to use namespaces to organize code and prevent naming conflicts. -->
+Today, I learned about writing functions in Typescript.
 
 ## Code Samples
 
