@@ -48,7 +48,7 @@ I also learned about the any keyword. When using any as type, it will just recei
 
 ### Day 3: Functions
 
-Today, I learned about writing functions in Typescript.
+Today, I learned about writing functions in Typescript. I learned that the better way to write functions is to write both the types in parameter as well as the return type.
 
 ## Code Samples
 
@@ -58,6 +58,19 @@ In this section, I will be sharing code samples related to Typescript that I hav
 // A simple Typescript program that logs a message to the console
 const message: string = "Hello, Typescript!";
 console.log(message);
+```
+
+Lessons on Functions:
+
+```typescript
+// const heros = ['ironman', 'spiderman']
+const heros = [1, 2, 3];
+
+// -lesson: so typescript also automatically infered the type when also using higher order functions like this
+
+heros.map((hero) => {
+  return `hero is ${hero}`;
+});
 ```
 
 <!--
