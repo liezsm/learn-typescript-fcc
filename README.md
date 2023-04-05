@@ -50,6 +50,10 @@ I also learned about the any keyword. When using any as type, it will just recei
 
 Today, I learned about writing functions in Typescript. I learned that the better way to write functions is to write both the types in parameter as well as the return type.
 
+### Day 4: Object
+
+Today, I learned about how to handle objects and how to use the type aliases for type checking objects.
+
 ## Code Samples
 
 In this section, I will be sharing code samples related to Typescript that I have created during my journey.
@@ -71,6 +75,26 @@ const heros = [1, 2, 3];
 heros.map((hero) => {
   return `hero is ${hero}`;
 });
+```
+
+Objects & Type aliases
+
+```typescript
+type User = {
+  name: string;
+  email: string;
+  isActive: boolean;
+};
+
+function createUserx(user: User) {}
+
+const newUserx = {
+  name: "hitesh",
+  email: "hites@com",
+  isActive: false,
+};
+
+createUserx(newUserx);
 ```
 
 <!--
