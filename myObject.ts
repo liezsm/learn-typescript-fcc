@@ -17,4 +17,33 @@ function createCourse(): { name: string; isPaid: boolean } {
   return { name: "reactjs", isPaid: false };
 }
 
+// -Instead of the above, the better way when passing objects is like this:
+// -using type
+
+type User = {
+  name: string;
+  email: string;
+  isActive: boolean;
+};
+
+function createUserx(user: User) {}
+
+const newUserx = {
+  name: "hitesh",
+  email: "hites@com",
+  isActive: false,
+};
+const newUserxx = {
+  name: "hitesh",
+  email: "hites@com",
+  isActive: false,
+  isPaid: true,
+};
+
+createUserx(newUserx);
+
+// -this doesn't give error so to avoid, put also the type in declaring the new inputs (const newUserxx: User)
+createUserx(newUserxx);
+
+// createUserx({name: "test", email: "tes@com", isActive: true, isPaid: false})
 export {};

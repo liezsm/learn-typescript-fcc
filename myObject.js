@@ -16,3 +16,18 @@ createUser(newUser);
 function createCourse() {
     return { name: "reactjs", isPaid: false };
 }
+function createUserx(user) { }
+var newUserx = {
+    name: "hitesh",
+    email: "hites@com",
+    isActive: false
+};
+var newUserxx = {
+    name: "hitesh",
+    email: "hites@com",
+    isActive: false,
+    isPaid: true
+};
+createUserx(newUserx);
+// -this doesn't give error so to avoid, put also the type in declaring the new inputs (const newUserxx: User)
+createUserx(newUserxx);
