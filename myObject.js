@@ -31,3 +31,10 @@ var newUserxx = {
 createUserx(newUserx);
 // -this doesn't give error so to avoid, put also the type in declaring the new inputs (const newUserxx: User)
 createUserx(newUserxx);
+var myUser = {
+    _id: "343533",
+    name: "h",
+    email: "h@com",
+    isActive: false
+};
+myUser.email = "h@gmail.com";

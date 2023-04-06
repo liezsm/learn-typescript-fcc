@@ -46,4 +46,41 @@ createUserx(newUserx);
 createUserx(newUserxx);
 
 // createUserx({name: "test", email: "tes@com", isActive: true, isPaid: false})
+
+// - READ Only and optional
+
+type Person = {
+  readonly _id: string /* -so if there are properties that you dont want to be modified or example from backend data we put readonly */;
+  name: string;
+  email: string;
+  isActive: boolean;
+  creditCardDetails?: number /* - when there are properties depending on usecase that is applicable only to some but not all, we can make it optional by using ? */;
+};
+
+let myUser: Person = {
+  _id: "343533",
+  name: "h",
+  email: "h@com",
+  isActive: false,
+};
+
+myUser.email = "h@gmail.com";
+
+// -as you notice this gives an error because we set this to readonly
+// myUser._id = "adfdasfd";
+// -another use case of type
+
+type cardNumber = {
+  cardNumber: string;
+};
+
+type cardDate = {
+  cardDate: string;
+};
+
+type cardDetails = cardNumber &
+  cardDate & {
+    cvv: number;
+  };
+
 export {};
