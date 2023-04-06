@@ -50,9 +50,11 @@ I also learned about the any keyword. When using any as type, it will just recei
 
 Today, I learned about writing functions in Typescript. I learned that the better way to write functions is to write both the types in parameter as well as the return type.
 
-### Day 4: Object
+### Day 4: Object & Array
 
 Today, I learned about how to handle objects and how to use the type aliases for type checking objects. Also we can add the keyword "readonly" for some properties in objects that we don't want to be modified and using "?" in some properties to make it optional, meaning it is not required to have input for this property.
+
+I also learned how to declare an array just by simple adding brackets([]) next to the type (string, number, boolean).
 
 ## Code Samples
 
