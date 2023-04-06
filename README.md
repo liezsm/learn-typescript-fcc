@@ -52,7 +52,7 @@ Today, I learned about writing functions in Typescript. I learned that the bette
 
 ### Day 4: Object
 
-Today, I learned about how to handle objects and how to use the type aliases for type checking objects.
+Today, I learned about how to handle objects and how to use the type aliases for type checking objects. Also we can add the keyword "readonly" for some properties in objects that we don't want to be modified and using "?" in some properties to make it optional, meaning it is not required to have input for this property.
 
 ## Code Samples
 
@@ -95,6 +95,20 @@ const newUserx = {
 };
 
 createUserx(newUserx);
+```
+
+Day 4 Code samples
+
+```typescript
+// - READ Only and optional
+
+type Person = {
+  readonly _id: string /* -so if there are properties that you dont want to be modified or example from backend data we put readonly */;
+  name: string;
+  email: string;
+  isActive: boolean;
+  creditCardDetails?: number /* - when there are properties depending on usecase that is applicable only to some but not all, we can make it optional by using ? */;
+};
 ```
 
 <!--
