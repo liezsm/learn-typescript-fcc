@@ -54,6 +54,10 @@ Today, I learned about writing functions in Typescript. I learned that the bette
 
 Today, I learned about how to handle objects and how to use the type aliases for type checking objects. Also we can add the keyword "readonly" for some properties in objects that we don't want to be modified and using "?" in some properties to make it optional, meaning it is not required to have input for this property.
 
+### Day 5: Union
+
+Today, I learned about using union (|) which we used when we declare a variable whom we choose to have more than one type.
+
 I also learned how to declare an array just by simple adding brackets([]) next to the type (string, number, boolean).
 
 ## Code Samples
@@ -111,6 +115,14 @@ type Person = {
   isActive: boolean;
   creditCardDetails?: number /* - when there are properties depending on usecase that is applicable only to some but not all, we can make it optional by using ? */;
 };
+```
+
+Day 5 Code Samples
+
+```typescript
+let score: number | string = 33;
+
+score = "44";
 ```
 
 <!--
