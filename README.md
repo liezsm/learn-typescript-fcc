@@ -60,6 +60,10 @@ Today, I learned about using union (|) which we used when we declare a variable 
 
 I also learned how to declare an array just by simple adding brackets([]) next to the type (string, number, boolean).
 
+### Day 6: Union
+
+Today, I resumed watching the tutorial about unions and learned about how to use it in arrays and can be use in some literal types.
+
 ## Code Samples
 
 In this section, I will be sharing code samples related to Typescript that I have created during my journey.
@@ -123,6 +127,17 @@ Day 5 Code Samples
 let score: number | string = 33;
 
 score = "44";
+```
+
+Day 6 Code samples
+
+```typescript
+// example
+
+let seatAllotment: "aisle" | "middle" | "window";
+
+// seatAllotment = "test"
+seatAllotment = "aisle";
 ```
 
 <!--
