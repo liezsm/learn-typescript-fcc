@@ -64,6 +64,10 @@ I also learned how to declare an array just by simple adding brackets([]) next t
 
 Today, I resumed watching the tutorial about unions and learned about how to use it in arrays and can be use in some literal types.
 
+### Day 7: Tuples
+
+Today, I learned about using tuples. It is a special type of array used in typescript that we used declaring the specific type of the certain element in the array.
+
 ## Code Samples
 
 In this section, I will be sharing code samples related to Typescript that I have created during my journey.
@@ -138,6 +142,22 @@ let seatAllotment: "aisle" | "middle" | "window";
 
 // seatAllotment = "test"
 seatAllotment = "aisle";
+```
+
+Day 7 Code samples
+
+```typescript
+// -example of usecase scenarion
+
+let rgb: [number, number, number];
+
+rgb = [244, 255, 255];
+
+// -another usecase
+
+type User = [number, string];
+
+let newUser: User = [12, "hitest@gm.com"];
 ```
 
 <!--
