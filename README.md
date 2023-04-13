@@ -68,6 +68,10 @@ Today, I resumed watching the tutorial about unions and learned about how to use
 
 Today, I learned about using tuples. It is a special type of array used in typescript that we used declaring the specific type of the certain element in the array.
 
+### Day 8: Enums, Interface
+
+Today, I learned about using enums in typescript. This is best to use when you want to enumerate.
+
 ## Code Samples
 
 In this section, I will be sharing code samples related to Typescript that I have created during my journey.
