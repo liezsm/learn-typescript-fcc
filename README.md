@@ -72,6 +72,10 @@ Today, I learned about using tuples. It is a special type of array used in types
 
 Today, I learned about enums and interface. Enums are used when you want to enumerate. Interface are the same with type we can use when declaring objects but the difference is with interface we can declare some functions unlike using type.
 
+Interface vs Type
+
+Types and interface are alike in many ways but the difference is interface can be reopened and can add new properties while type, we cannot. So interface is extendable while type is not.
+
 ## Code Samples
 
 In this section, I will be sharing code samples related to Typescript that I have created during my journey.
