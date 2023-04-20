@@ -1,0 +1,16 @@
+{
+  "name": "learn-typescript-fcc",
+  "version": "1.0.0",
+  "description": "This repository contains my journey in learning Typescript from the video tutorial [\"Typescript Tutorial for Beginners\" by FreeCodeCamp.org](https://www.youtube.com/watch?v=30LWjhZzg50). Throughout this journey, I will be documenting my progress, notes, and code samples related to Typescript.",
+  "main": "intro.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-wsl.com:liezsm/learn-typescript-fcc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
