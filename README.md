@@ -76,6 +76,11 @@ Interface vs Type
 
 Types and interface are alike in many ways but the difference is interface can be reopened and can add new properties while type, we cannot. So interface is extendable while type is not.
 
+### Day 9: Setting up a project
+
+Today, I learned how to setup a project when using typescript. We have to initialized the ts config file and modify it according the settings we want for our project.
+
+
 ## Code Samples
 
 In this section, I will be sharing code samples related to Typescript that I have created during my journey.
