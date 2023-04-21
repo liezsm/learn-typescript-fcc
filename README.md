@@ -80,6 +80,10 @@ Types and interface are alike in many ways but the difference is interface can b
 
 Today, I learned how to setup a project when using typescript. We have to initialized the ts config file and modify it according the settings we want for our project.
 
+### Day 10: Classes
+
+Today, I learned classes and how to create one. In classes we use the constructor and we can declare  a variable either public or private. Private are only accessible inside the class. We can also use the readonly keyword we have learned in the past lesson.
+
 
 ## Code Samples
 
@@ -171,6 +175,24 @@ rgb = [244, 255, 255];
 type User = [number, string];
 
 let newUser: User = [12, "hitest@gm.com"];
+```
+Day 10 Code samples on classes
+
+```typescript
+class User {
+
+    readonly city: string = "manila"
+    constructor(
+        public email: string, 
+        public name: string,
+        private userId: number = 123
+        ){
+        
+
+    }
+}
+
+const newUser = new User('h@com', 'hitesth')
 ```
 
 <!--
