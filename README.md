@@ -84,6 +84,10 @@ Today, I learned how to setup a project when using typescript. We have to initia
 
 Today, I learned classes and how to create one. In classes we use the constructor and we can declare  a variable either public or private. Private are only accessible inside the class. We can also use the readonly keyword we have learned in the past lesson.
 
+### Day 11: Getters and Setters
+
+Today, I learned creating getters and setters inside the classes. Getters should have a return type while setters don't have to put a return type (even void).
+
 
 ## Code Samples
 
@@ -189,6 +193,37 @@ class User {
         ){
         
 
+    }
+}
+
+const newUser = new User('h@com', 'hitesth')
+```
+Day 11 Code samples on getters and setters
+
+```typescript
+class User {
+
+    readonly city: string = "manila"
+    private _courseCount = 1
+
+    constructor(
+        public email: string, 
+        public name: string,
+        private userId: number = 123
+        ){
+        
+
+    }
+
+    get courseCount(): number{
+        return this._courseCount
+    }
+
+    set courseCount(courseNum){
+        if(courseNum <= 1){
+            throw new Error("Course count should be more than 1")
+        }
+        this._courseCount = courseNum
     }
 }
 
