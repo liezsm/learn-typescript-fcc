@@ -88,6 +88,10 @@ Today, I learned classes and how to create one. In classes we use the constructo
 
 Today, I learned creating getters and setters inside the classes. Getters should have a return type while setters don't have to put a return type (even void).
 
+### Day 12: Protected keyword
+
+Today, I learned about another reserved keyword which is protected. It is one of the accesss modifier keyword(together with private, public, readonly). In my undestanding, we can use protected keyword if we want the variable or function to be inherited from the parent's class to its children (through extending).
+
 
 ## Code Samples
 
