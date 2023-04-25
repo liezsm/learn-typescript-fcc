@@ -92,6 +92,10 @@ Today, I learned creating getters and setters inside the classes. Getters should
 
 Today, I learned about another reserved keyword which is protected. It is one of the accesss modifier keyword(together with private, public, readonly). In my undestanding, we can use protected keyword if we want the variable or function to be inherited from the parent's class to its children (through extending).
 
+### Day 12:  Why interface is important
+
+Today, I learned about using interface as a guide when creating a class.
+
 
 ## Code Samples
 
