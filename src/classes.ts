@@ -15,7 +15,8 @@
 class User {
 
     readonly city: string = "manila"
-    private _courseCount = 1
+    // private _courseCount = 1
+    protected _courseCount = 1
 
     constructor(
         public email: string, 
@@ -43,6 +44,18 @@ class User {
         }
         this._courseCount = courseNum
     }
+}
+// -protected
+// -it can be use when we want to inherit a class
+class SubUser extends User{
+    // -we cannot inherit the variables that declared as private, so if we want to inherit a variable to its child we will use protected rather than private keyword
+
+    isFamily: boolean = true;
+    
+    changeCourseCount(courseNum){
+        this._courseCount = courseNum 
+    }
+
 }
 
 const newUser = new User('h@com', 'hitesth')
