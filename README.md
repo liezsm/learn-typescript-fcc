@@ -96,6 +96,10 @@ Today, I learned about another reserved keyword which is protected. It is one of
 
 Today, I learned about using interface as a guide when creating a class.
 
+### Day 13:  Generics
+
+Today, I learned about using generics. It is one of the reusability feature in typescript wherein you can put any type inside the brackets (<T>) and this is the common and best practice way when using generics.
+
 
 ## Code Samples
 
@@ -236,6 +240,22 @@ class User {
 }
 
 const newUser = new User('h@com', 'hitesth')
+```
+Day 13 Code samples on generics
+
+```typescript
+function identityFour<T>(val: T): T{
+    return val
+}
+
+// -another example of using generics
+
+interface Bottle {
+    brand: string,
+    type: number
+}
+
+identityFour<Bottle>({})
 ```
 
 <!--
