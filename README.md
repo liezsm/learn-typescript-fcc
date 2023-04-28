@@ -100,6 +100,10 @@ Today, I learned about using interface as a guide when creating a class.
 
 Today, I learned about using generics. It is one of the reusability feature in typescript wherein you can put any type inside the brackets (<T>) and this is the common and best practice way when using generics.
 
+### Day 14:  Abstract class
+
+Today, I learned about abstract class. It is almost the same with interface but there are some few difference. For example when used in another class we use the extends keyword while in interface we use the implements keyword.
+
 
 ## Code Samples
 
@@ -257,30 +261,31 @@ interface Bottle {
 
 identityFour<Bottle>({})
 ```
+Day 14 Code samples on abstract class
 
-<!--
 ```typescript
-// Defining a class with properties and methods
-class Person {
-  private name: string;
-  private age: number;
+abstract class TakePhoto {
+  constructor(
+    public cameraMode: string, 
+    public filter: string
+    ) {}
 
-  constructor(name: string, age: number) {
-    this.name = name;
-    this.age = age;
-  }
-
-  public greet(): void {
-    console.log(
-      `Hello, my name is ${this.name} and I am ${this.age} years old.`
-    );
-  }
+    abstract sepia(): void;
+    // -notice we can still create a function just like in interface
+    getReelTime(): number{
+        // -some complex calculation
+        return 8
+    }
 }
 
-// Creating an instance of the Person class and calling its greet method
-const john: Person = new Person("John", 30);
-john.greet();
-``` -->
+// -notice when we add the word abstract, it now  became error
+// -when we create abstract class we can't create an object, it is like interface a blueprint
+// -another difference from interface is when we make interface as blueprint in class we use the word implement while an abstract we use extends
+// - also to initialize an object we use the class that extends it. (in the example we use the Instagram instead of TakePhot)
+
+
+// const test =  new TakePhoto("test", "Test")
+``` 
 
 ## Resources
 
