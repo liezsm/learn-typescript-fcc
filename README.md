@@ -104,6 +104,10 @@ Today, I learned about using generics. It is one of the reusability feature in t
 
 Today, I learned about abstract class. It is almost the same with interface but there are some few difference. For example when used in another class we use the extends keyword while in interface we use the implements keyword.
 
+### Day 15:  Generics in arrays and arrow function
+
+Today, I learned about using generics in a function when dealing with arrays.
+
 
 ## Code Samples
 
@@ -264,6 +268,7 @@ identityFour<Bottle>({})
 Day 14 Code samples on abstract class
 
 ```typescript
+
 abstract class TakePhoto {
   constructor(
     public cameraMode: string, 
@@ -285,6 +290,17 @@ abstract class TakePhoto {
 
 
 // const test =  new TakePhoto("test", "Test")
+``` 
+
+Day 15 Code samples on generics
+```typescript
+// -generics in array and arrow functions
+
+const getMoreSeachProduct = <T,>(products: T[]):T  => {
+  // do some database operations
+  const myIndex = 5;
+  return products[myIndex];
+}
 ``` 
 
 ## Resources
