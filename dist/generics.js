@@ -16,3 +16,14 @@ function identityFour(val) {
     return val;
 }
 identityFour({});
+// -generics in array and arrow functions
+function getSearchProduct(products) {
+    // do some database operations
+    const myIndex = 3;
+    return products[myIndex];
+}
+const getMoreSeachProduct = (products) => {
+    // do some database operations
+    const myIndex = 5;
+    return products[myIndex];
+};

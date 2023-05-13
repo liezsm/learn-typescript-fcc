@@ -30,3 +30,19 @@ interface Bottle {
 }
 
 identityFour<Bottle>({})
+
+
+
+// -generics in array and arrow functions
+
+function getSearchProduct<T>(products: T[]): T{
+    // do some database operations
+    const myIndex = 3;
+    return products[myIndex]
+}
+
+const getMoreSeachProduct = <T,>(products: T[]):T  => {
+  // do some database operations
+  const myIndex = 5;
+  return products[myIndex];
+}
