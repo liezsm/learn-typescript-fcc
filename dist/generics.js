@@ -27,3 +27,25 @@ const getMoreSeachProduct = (products) => {
     const myIndex = 5;
     return products[myIndex];
 };
+// -generics classes
+function getProperty(obj, key) {
+    return obj[key];
+}
+let x = { a: 1, b: 2, c: 3, d: 4 };
+getProperty(x, 'a');
+function anotherFunc(valOne, valTwo) {
+    return {
+        valOne,
+        valTwo
+    };
+}
+// anotherFunc(3,"sam")
+anotherFunc(3, {});
+class Sellable {
+    constructor() {
+        this.cart = [];
+    }
+    addToCart(product) {
+        this.cart.push(product);
+    }
+}

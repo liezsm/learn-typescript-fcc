@@ -46,3 +46,54 @@ const getMoreSeachProduct = <T,>(products: T[]):T  => {
   const myIndex = 5;
   return products[myIndex];
 }
+
+// -generics classes
+ 
+function getProperty< T, Key extends keyof T>(obj: T, key: Key){
+    return obj[key]
+}
+
+let x = {a: 1, b:2, c: 3, d: 4}
+
+getProperty(x, 'a')
+// getProperty(x, 'm')
+// -last example will error since m is not a property of the object passed
+
+// another example
+
+
+interface Database{
+    connection: string,
+    username: string,
+    password: string
+}
+
+function anotherFunc<T , U extends Database>(valOne:T, valTwo: U){
+    return {
+        valOne,
+        valTwo
+    }
+}
+
+// anotherFunc(3,"sam")
+anotherFunc(3,{})
+
+interface  Quiz{
+    name: string,
+    type: string
+}
+
+interface  Course{
+    name:string,
+    author: string,
+    subject: string
+}
+
+class Sellable<T> {
+    public cart: T[] = [];
+
+    addToCart(product:T){
+        this.cart.push(product)
+    }
+
+}
