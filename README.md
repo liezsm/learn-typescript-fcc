@@ -112,6 +112,10 @@ Today, I learned about using generics in a function when dealing with arrays.
 
 Today, I learned about using generics in classes and extending it.
 
+### Day 16:  Type narrowing
+
+Today, I learned about type narrowing in typescript
+
 
 ## Code Samples
 
