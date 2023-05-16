@@ -112,6 +112,10 @@ Today, I learned about using generics in a function when dealing with arrays.
 
 Today, I learned about using generics in classes and extending it.
 
+### Day 16:  Type narrowing
+
+Today, I learned about type narrowing. It is simply being specific to what is the data type of your variable if it has many types being declared. We mostly use the typeof when checking the data type.
+
 
 ## Code Samples
 
