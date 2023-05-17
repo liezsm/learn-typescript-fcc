@@ -25,3 +25,9 @@ function printAll(strs) {
         }
     }
 }
+function isAdmin(user) {
+    if ("isAdmin" in user) {
+        return user.isAdmin;
+    }
+}
+// -using is
