@@ -108,14 +108,17 @@ Today, I learned about abstract class. It is almost the same with interface but 
 
 Today, I learned about using generics in a function when dealing with arrays.
 
-### Day 15:  Generics classes
+### Day 16:  Generics classes
 
 Today, I learned about using generics in classes and extending it.
 
-### Day 16:  Type narrowing
+### Day 17:  Type narrowing
 
 Today, I learned about type narrowing. It is simply being specific to what is the data type of your variable if it has many types being declared. We mostly use the typeof when checking the data type.
 
+### Day 18:  Type narrowing using in
+
+Today, I learned about using in function to further type narrowing. It is a method used to check whether a specific thing is part of the object/variable.
 
 ## Code Samples
 
@@ -208,6 +211,7 @@ type User = [number, string];
 
 let newUser: User = [12, "hitest@gm.com"];
 ```
+
 Day 10 Code samples on classes
 
 ```typescript
@@ -339,6 +343,28 @@ function anotherFunc<T , U extends Database>(valOne:T, valTwo: U){
     return {
         valOne,
         valTwo
+    }
+}
+``` 
+
+Day 18 Code samples on using in method for type narrowing
+
+```typescript
+interface User {
+    name: string;
+    email: string
+}
+
+interface Admin {
+    name: string
+    email: string
+    isAdmin: boolean
+
+}
+
+function isAdmin(user: User | Admin){
+    if("isAdmin" in user){
+        return user.isAdmin
     }
 }
 ``` 
