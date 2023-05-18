@@ -49,4 +49,38 @@ function isAdmin(user: User | Admin){
     }
 }
 
-// -using is
+// -using instanceof narrowing
+
+// new Date()
+// new Arr
+function logValue(x: Date | string){
+    if(x instanceof Date){
+        console.log(x.toUTCString)
+    } else{
+        console.log(x.toLocaleLowerCase())
+    }
+}
+
+
+// -using type predicates
+
+type Fish = {swim: () => void}
+type Bird = {fly: () => void}
+
+function isFish(pet: Fish | Bird): pet is Fish{
+    // if(food as Fish){
+
+    // }
+    return (pet as Fish).swim !== undefined;
+}
+
+function getFood(pet: Bird | Fish){
+
+    if(isFish(pet)){
+        pet
+        return "Fish food"
+    }
+    pet
+    return "bird food"
+
+}

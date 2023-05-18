@@ -30,4 +30,27 @@ function isAdmin(user) {
         return user.isAdmin;
     }
 }
-// -using is
+// -using instanceof narrowing
+// new Date()
+// new Arr
+function logValue(x) {
+    if (x instanceof Date) {
+        console.log(x.toUTCString);
+    }
+    else {
+        console.log(x.toLocaleLowerCase());
+    }
+}
+function isFish(pet) {
+    // if(food as Fish){
+    // }
+    return pet.swim !== undefined;
+}
+function getFood(pet) {
+    if (isFish(pet)) {
+        pet;
+        return "Fish food";
+    }
+    pet;
+    return "bird food";
+}
