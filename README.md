@@ -120,6 +120,10 @@ Today, I learned about type narrowing. It is simply being specific to what is th
 
 Today, I learned about using in function to further type narrowing. It is a method used to check whether a specific thing is part of the object/variable.
 
+### Day 19:  Type narrowing using instanceof and predicates
+
+Today, I learned about using instanceof for narrowing. It is usually used to checked if an the thing to be checked is created using the new keyword while the type predicates is used for checking usually for interface using the "as" keyword to check and in return of the function, use "is" keyword.
+
 ## Code Samples
 
 In this section, I will be sharing code samples related to Typescript that I have created during my journey.
