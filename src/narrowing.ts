@@ -84,3 +84,45 @@ function getFood(pet: Bird | Fish){
     return "bird food"
 
 }
+
+// -discriminated union
+
+interface Circle {
+    kind: "circle",
+    radius: number
+}
+interface Square {
+    kind: "square",
+    side: number
+}
+interface Rectangle {
+    kind: "rectangle",
+    width: number,
+    length: number
+}
+
+// -swicth these two to check the exhaust checking in switch
+
+// type Shape = Circle | Square | Rectangle
+type Shape = Circle | Square 
+
+function getShape(shape: Shape){
+    if(shape.kind === "circle"){
+        return Math.PI * shape.radius ** 2;
+    }
+    return shape.side * shape.side
+}
+
+// -exhaustiveness checking with never
+
+function getArea(shape: Shape){
+    switch(shape.kind){
+        case "circle":
+            return Math.PI * shape.radius ** 2;
+        case "square":
+            return shape.side * shape.side;
+        default:
+            const  EXHAUST_CHECK: never = shape;
+            return EXHAUST_CHECK
+    }
+}
