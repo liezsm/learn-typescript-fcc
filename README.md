@@ -124,6 +124,10 @@ Today, I learned about using in function to further type narrowing. It is a meth
 
 Today, I learned about using instanceof for narrowing. It is usually used to checked if an the thing to be checked is created using the new keyword while the type predicates is used for checking usually for interface using the "as" keyword to check and in return of the function, use "is" keyword.
 
+### Day 19: Discriminate union and exhaustiveness checking using never type
+
+Today, I learned about using discriminated union for further checking the type and also using the never type in a switch statement for the default case.
+
 ## Code Samples
 
 In this section, I will be sharing code samples related to Typescript that I have created during my journey.
